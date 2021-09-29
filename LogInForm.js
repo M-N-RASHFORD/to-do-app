@@ -53,8 +53,8 @@ export default class LogIn extends React.Component {
         </div>
         <div className="form-content">
           <>
-            <td><input type="email" onChange={this.handleChange} placeholder="Email" name="email"/></td>
-            <td><input type="password" onChange={this.handleSubmit} placeholder="Password" name="password"/></td>
+            <td><input type="email" value={this.state.email} onChange={this.handleChange} placeholder="Email" name="email"/></td>
+            <td><input type="password" value={this.state.password} onChange={this.handleSubmit} placeholder="Password" name="password"/></td>
             <td><input type="button" onClick={this.handleSubmit} value="SignIn" className="button"/></td>
             <td><input type="button" onClick={this.handleGoogle} value="Signin with Google" className="_button"/></td>
             <td><input type="button" onClick={this.handleSignup} value="Signup" className="_button" style={{backgroundColor: '#ffaeae'}}/></td>
